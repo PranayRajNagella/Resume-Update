@@ -24,6 +24,3 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-- script: |
-  clean test
-  displayName: 'Run Maven Clean Test'
