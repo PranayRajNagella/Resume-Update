@@ -16,7 +16,7 @@ steps:
 - task: Maven@4
   inputs:
     mavenPomFile: 'ResumeUpdate/pom.xml'
-    goals: 'mvn clean test'
+    goals: 'clean test'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
@@ -25,5 +25,5 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 - script: |
-    mvn clean test
+  clean test
   displayName: 'Run Maven Clean Test'
